@@ -1,3 +1,7 @@
+//
+// OBJECT DESTRUCTURING
+//
+
 // const person = {
 // 	name: 'Awilda',
 // 	age: 30,
@@ -37,3 +41,30 @@ const book = {
 const { name: publisherName = 'Self-Published' } = book.publisher;
 
 console.log(publisherName); // if no valid name, use Self-Published
+
+
+//
+// ARRAY DESTRUCTURING
+//
+
+// const address = ['1299 S Juniper Street', 'Philadelphia', 'Pennsylvania', '19147'];
+
+// const [street, city, state, zip] = address;
+
+
+// // You can define what you need to use
+// // const [, city, state] = address;
+// // const [, , state] = address;
+
+
+// // Default value
+// // const [ , , state='New York'] = address;
+
+// console.log(`You are in ${city} ${state}`);
+
+
+const item = ['Coffee (hot)', '$2.00', '$2.50', '$2.75'];
+
+const [menuItem, smallPrice, mediumPrice, largePrice] = item;
+
+console.log(`A medium ${menuItem} costs ${mediumPrice}`);
